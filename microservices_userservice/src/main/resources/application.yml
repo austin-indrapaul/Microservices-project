@@ -1,2 +1,17 @@
 server:
-  port: 8091
+  port: 8081
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:mem:test1
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    
+ #for insert command in data.sql to work
+  jpa:
+    defer-datasource-initialization: true
