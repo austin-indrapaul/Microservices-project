@@ -44,7 +44,7 @@ public class UserController {
 		if (d.isPresent()) {
 			return new ResponseEntity<>(d.get(), HttpStatus.FOUND);
 		} else {
-			return new ResponseEntity<>("such user does not exist", HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>("User does not exist", HttpStatus.NO_CONTENT);
 		}
 	}
 
