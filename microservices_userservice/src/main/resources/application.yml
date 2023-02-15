@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: USER-SERVICE
   h2:
     console:
       enabled: true
@@ -15,3 +17,14 @@ spring:
  #for insert command in data.sql to work
   jpa:
     defer-datasource-initialization: true
+    
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true

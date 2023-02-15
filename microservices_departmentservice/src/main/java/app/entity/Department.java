@@ -21,13 +21,4 @@ public class Department {
 	public int departmentId;
 	public String departmentName;
 	public String block;
-//
-//	public Department() {
-//	}
-//
-//	public Department(int id, String name, String block) {
-//		this.departmentId = id;
-//		this.departmentName = name;
-//		this.block = block;
-//	}
 }
