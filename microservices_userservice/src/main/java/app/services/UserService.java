@@ -44,7 +44,8 @@ public class UserService {
 	}
 
 	public DepartmentVO fetchDepartment(int departmentId) {
-		return restTemplate.getForObject("http://localhost:8082/api/department/" + departmentId, DepartmentVO.class);
+		return restTemplate.getForObject("http://DEPARTMENT-SERVICE/api/department/" + departmentId,
+				DepartmentVO.class);
 
 	}
 
